@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "name": "mypic",
+    "creator": "gipsz jakab",
+    "description": "mdqwdoiqhwdiuqőw",
+    "price": 1000,
+    "image": "url1"
+  },
+  {
+    "id": 2,
+    "name": "kepem",
+    "creator": "proba joska",
+    "description": "oooooooooo",
+    "price": 561,
+    "image": "url2"
+  },
+  {
+    "id": 3,
+    "name": "foto",
+    "creator": "kis béla",
+    "description": "wqeqeqweqweqweqwe",
+    "price": 65,
+    "image": "url3"
+  }
+]

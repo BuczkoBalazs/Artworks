@@ -1,0 +1,55 @@
+[
+    {
+        "email": "asd",
+        "password": "nemasd",
+        "favorites": [
+            "627c1428f2fdcb8e1e47baf4",
+            "627c1428f2fdcb8e1e47baf2",
+            "627c1428f2fdcb8e1e47baf3",
+            "627ce02af2fdcb8e1e47bb04",
+            "627ce02af2fdcb8e1e47bb06",
+            "627ce02af2fdcb8e1e47baf6",
+            "627ce02af2fdcb8e1e47baf7",
+            "627ce02af2fdcb8e1e47bb00"
+        ]
+    },
+    {
+        "email": "ricsimarta@gmail.com",
+        "password": "qwe",
+        "favorites": []
+    },
+    {
+        "email": "r@h.com",
+        "password": "qwe",
+        "favorites": []
+    },
+    {
+        "email": "dori.nagy0728@gmail.com",
+        "password": "1234567",
+        "favorites": []
+    },
+    {
+        "email": "asd@asd.asd",
+        "password": "asd",
+        "favorites": []
+    },
+    {
+        "email": "balazs@buczko.end",
+        "password": "sör",
+        "favorites": []
+    },
+    {
+        "email": "kecske@taliga.com",
+        "password": "bal",
+        "favorites": []
+    },
+    {
+        "email": "r@h.c",
+        "password": "qwe",
+        "favorites": [
+            "627c1428f2fdcb8e1e47baf4",
+            "627c1428f2fdcb8e1e47baf3",
+            "627c1428f2fdcb8e1e47baf2"
+        ]
+    }
+]

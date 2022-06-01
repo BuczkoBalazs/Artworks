@@ -1,0 +1,546 @@
+/* --- start of CSS reset --- */
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: none;
+  box-sizing: border-box;
+  background: transparent;
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+
+a img {
+  border: none;
+}
+
+button,
+a {
+  cursor: pointer;
+  color: inherit;
+}
+
+textarea {
+  resize: none;
+}
+
+button,
+textarea,
+select {
+  appearance: none !important;
+  border-radius: 0;
+}
+
+/* --- end of CSS reset --- */
+
+/* FONT IMPORTS */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* END OF FONT IMPORTS */
+
+/* COLOR PALETTE */
+
+:root{
+  --darkGray: #191e23;
+  --buttonRed: #ef233c;
+  --white: #f4f4f4;
+}
+
+/* END OF COLOR PALETTE */
+
+/* LOGIN PAGE FORMAT */
+
+.wrapper {
+  margin-top: 80px;
+  height: calc(100vh - 80px);
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.loginPage h2 {
+  padding-top: 80px;
+  text-align: center;
+  margin: 50px;
+  color: var(--white);
+}
+
+.loginPage form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+#loginEmail,
+#loginPassword {
+  border-color: var(--white);
+  color: var(--white);
+}
+
+.loginPage p {
+  color: var(--white);
+}
+
+.loginPage button {
+  border-color: var(--white);
+  color: var(--white);
+}
+
+.loginPage button:hover {
+  border-color: var(--buttonRed);
+  color: var(--buttonRed);
+} 
+
+/* HEADER ELEMENT FORMAT */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 80px;
+  padding: 20px;
+  font-family: 'Poppins';
+  font-weight: 500;
+  color: var(--white);
+  background-color: var(--darkGray);
+}
+
+.nav-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.nav-container a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 10px 0px 10px;
+}
+
+.nav-container a:hover {
+  color: var(--buttonRed);
+}
+
+.nav-container button {
+  width: 60px;
+  font-family: 'Poppins';
+  font-weight: 500;
+  color: var(--white);
+  border-color: var(--darkGray);
+  background-color: var(--buttonRed);
+}
+
+.nav-container button:hover {
+  border-color: var(--white);
+}
+
+/* START ELEMENT FORMAT */
+
+.start-image {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
+}
+
+.welcome-message {
+  margin-top: 200px;
+  padding: 10px;
+  font-family: 'Poppins';
+  font-weight: 700;
+  font-size: 50px;
+  color: var(--white);
+  backdrop-filter: saturate(200%) blur(3px);
+}
+
+/* FAVOURITES ELEMENT FORMAT */
+
+.favourites-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 15px;
+}
+
+.favourites-grid {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  padding-top: 15px;
+}
+
+/* FOOTER ELEMENT FORMAT */
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 80px;
+  padding: 20px;
+  font-family: 'Poppins';
+  font-weight: 500;
+  color: var(--white);
+  background-color: var(--darkGray);
+}
+
+.footer button {
+  width: 32px;
+  margin-left: 15px;
+  color: var(--white);
+  border-color: var(--darkGray);
+  background-color: var(--buttonRed);
+}
+
+.footer button:hover {
+  border-color: var(--white);
+}
+
+
+.regPage h2 {
+  text-align: center;
+  margin: 50px;
+  padding: 40px;
+  color: var(--white);
+}
+
+.regPage form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+#regEmail,
+#regPassword,
+#regPassword2 {
+  border-color: var(--white);
+  color: var(--white);
+}
+
+.regPage p,
+#root p {
+  color: var(--white);
+}
+
+.regPage button,
+#root button {
+  border-color: var(--white);
+  color: var(--white);
+}
+
+.regPage button:hover,
+#root button:hover {
+  border-color: var(--buttonRed);
+  color: var(--buttonRed);
+}
+
+#root button {
+  margin-top:10px;
+}
+
+/* --- loadingElement --- */
+
+.lds-roller {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+
+.lds-roller div {
+  animation: lds-roller 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  transform-origin: 40px 40px;
+}
+
+.lds-roller div:after {
+  content: " ";
+  display: block;
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #000;
+  margin: -4px 0 0 -4px;
+}
+
+.lds-roller div:nth-child(1) {
+  animation-delay: -0.036s;
+}
+
+.lds-roller div:nth-child(1):after {
+  top: 63px;
+  left: 63px;
+}
+
+.lds-roller div:nth-child(2) {
+  animation-delay: -0.072s;
+}
+
+.lds-roller div:nth-child(2):after {
+  top: 68px;
+  left: 56px;
+}
+
+.lds-roller div:nth-child(3) {
+  animation-delay: -0.108s;
+}
+
+.lds-roller div:nth-child(3):after {
+  top: 71px;
+  left: 48px;
+}
+
+.lds-roller div:nth-child(4) {
+  animation-delay: -0.144s;
+}
+
+.lds-roller div:nth-child(4):after {
+  top: 72px;
+  left: 40px;
+}
+
+.lds-roller div:nth-child(5) {
+  animation-delay: -0.18s;
+}
+
+.lds-roller div:nth-child(5):after {
+  top: 71px;
+  left: 32px;
+}
+
+.lds-roller div:nth-child(6) {
+  animation-delay: -0.216s;
+}
+
+.lds-roller div:nth-child(6):after {
+  top: 68px;
+  left: 24px;
+}
+
+.lds-roller div:nth-child(7) {
+  animation-delay: -0.252s;
+}
+
+.lds-roller div:nth-child(7):after {
+  top: 63px;
+  left: 17px;
+}
+
+.lds-roller div:nth-child(8) {
+  animation-delay: -0.288s;
+}
+
+.lds-roller div:nth-child(8):after {
+  top: 56px;
+  left: 12px;
+}
+
+@keyframes lds-roller {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* --- loadingElement end --- */
+
+
+
+input{
+  font-family: 'Poppins';
+  font-size: 1rem;
+  border: 2px solid #191e23;
+  width: 300px;
+  height: 40px;
+  margin: 5px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+input[type="checkbox"], div.creatorfilter label{
+  width: 20px;
+  height: 15px;
+  font-family: 'Poppins';
+  font-weight: 500;
+}
+
+/* ARTWORK WRAPPER CSS PROPERTIES */
+
+.artwork-wrapper{
+  width: 1140px;
+  display: flex;
+  margin: 30px 0px;
+}
+
+.artwork-grid{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.artwork-functions{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* END OF ARTWORK WRAPPER CSS PROPERTIES */
+
+/* ARTWORK FILTERS CSS PROPERTIES */
+
+.artwork-filters{
+  width: 300px;
+}
+
+.artwork-filters p{
+  color: var(--darkGray) !important;
+}
+
+/* END OF ARTWORK FILTERS CSS PROPERTIES */
+
+
+
+.ArtworkCard{
+  background-color: #191e23;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  width: 250px;
+  margin: 10px;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0px 0px 15px 5px #B0B0B0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.ArtworkCard img{
+  width: 100%;
+  border-radius: 10px;
+}
+
+.ArtworkCard h5{
+  font-weight: 300;
+  font-size: 1rem;
+}
+
+h1{
+  font-family: 'Poppins';
+  color: #191e23;
+}
+
+.ArtworkCard button, .artwork-filters button{
+  background-color: #ef233c;
+  color: #f4f4f4;
+  width: 150px;
+  margin-top: 10px;
+  padding: 10px 15px;
+  border-radius: 10px;
+  font-family: 'Poppins';
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+}
+
+.ArtworkCard button:hover, .artwork-filters button:hover{
+  color: var(--white)!important;
+}
+
+/* POPUP CSS PROPERTIES */
+
+.popupoverlay{
+  background-color: rgba(25, 25, 25, 0.8);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 100%;
+  width: 100%;
+}
+.popupbox{
+  background-color: var(--darkGray);
+  height: 500px;
+  width: 1000px;
+  position: relative;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  padding: 50px;
+  border-radius: 20px;
+  display: flex;
+}
+
+.popupinfo{
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.popupbox img{
+  width: 400px;
+}
+
+.popup-close-btn{
+  width: 50px!important;
+  position: absolute;
+  right: 10px;
+  top: 10px
+}
+
+
+/* END OF POPUP CSS PROPERTIES */
+
+.loginForm label,
+.regForm label {
+  color: var(--white);
+}
+
+.loginForm input,
+.regForm input {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.loginForm button,
+.regForm button,
+button.loginButton {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.loginForm fieldset,
+.loginForm fieldset {
+  border-radius: 10px;
+}
